@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sliding Puzzle</h1>
+        <div class="controls">
+            <select id="puzzle-select">
+                <option value="dragonfly1">Dragonfly 1 Puzzle</option>
+                <option value="tower">Tower Puzzle</option>
+                <option value="roses">Roses Puzzle</option>
+                <option value="painter">Painter Puzzle</option>
+                <option value="catty">Catty Puzzle</option>
+                <option value="big_boy">Your Momo Puzzle</option>
+                <option value="pt_township_sky">PT Township Sky Puzzle</option>
+                <option value="coffee">Coffee Puzzle</option>
+                <option value="pt_township">PT Township Puzzle</option>
+                <option value="dragonfly2">Dragonfly 2 Puzzle</option>
+                <option value="indian_flag">Indian Flag Puzzle</option>
+            </select>
+            <button id="new-game">New Game</button>
+            <button id="restart">Restart</button>
+        </div>
+        <div class="stats">
+            <span id="timer">Time: 00:00</span>
+            <span id="moves">Moves: 0</span>
+        </div>
+        
+        <!-- REFERENCE IMAGE -->
+        <div class="reference-container">
+            <div class="reference-label">Reference:</div>
+            <div id="reference-image" class="reference-img"></div>
+        </div>
+        
+        <div id="puzzle-container"></div>
+        <div id="victory" class="hidden">
+            <h2>🎉 Puzzle Solved! 🎉</h2>
+            <p id="victory-stats"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
